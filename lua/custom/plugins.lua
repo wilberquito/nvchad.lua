@@ -59,6 +59,13 @@ local plugins = {
     config = function()
       require("trim").setup({})
     end
+  },
+  {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+    config = function()
+      require "custom.configs.trouble"
+    end
   }
 
 
