@@ -66,6 +66,10 @@ local plugins = {
     config = function()
       require "custom.configs.trouble"
     end
+  },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false
   }
 
 
