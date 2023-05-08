@@ -19,10 +19,11 @@ local plugins = {
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
-    end, -- Override to setup mason-lspconfig
+    end,
   },
+  -- overrides plugin configs
 
-  -- override plugin configs
+  -- Override to setup mason-lspconfig
   {
     "williamboman/mason.nvim",
     opts = overrides.mason
@@ -35,7 +36,9 @@ local plugins = {
 
   {
     "nvim-tree/nvim-tree.lua",
+    even = "VimEnter",
     opts = overrides.nvimtree,
+    lazy = false
   },
 
   -- Install a plugin

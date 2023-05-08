@@ -54,8 +54,8 @@ M.nvimtree = {
   git = {
     enable = true,
   },
-
   renderer = {
+    root_folder_label = true,
     highlight_git = true,
     icons = {
       show = {
@@ -63,9 +63,9 @@ M.nvimtree = {
       },
     },
   },
-
+  sync_root_with_cwd = true,
   view = {
-    adaptive_size = true,
+    adaptive_size = false,
     side = "left",
     width = 40,
     hide_root_folder = false
