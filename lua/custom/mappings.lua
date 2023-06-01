@@ -19,11 +19,6 @@ M.general = {
     ["<C-u>"] = { "<C-u>zz" },
     ["<leader>sh"] = { ":split<CR>", "split pane horizontal", opts = opts },
     ["<leader>sv"] = { ":vsplit<CR>", "split pane vertical", opts = opts },
-    ["<leader>c"] = {
-            ':highlight CursorColumn guibg=#404040 | highlight CursorLine guibg=#404040 | set cursorline! cursorcolumn!<CR>',
-            "shows where is the cursor",
-            opts = opts
-        },
   },
   v = {
     ["<"] = { "<gv", "tab line right", opts = opts },
