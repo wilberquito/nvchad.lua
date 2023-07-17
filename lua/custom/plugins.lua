@@ -32,7 +32,7 @@ local plugins = {
     -- stylua: ignore
     keys = {
       {
-        "s", mode = { "n", "x", "o" },
+        "S", mode = { "n", "x", "o" },
         function()
           require("flash").jump({
             search = {
@@ -43,7 +43,7 @@ local plugins = {
         })
         end,
         desc = "Flash" },
-      { "S", mode = { "n", "o", "x" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+      -- { "S", mode = { "n", "o", "x" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
       { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
       { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
@@ -53,12 +53,10 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = overrides.mason
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     opts = overrides.treesitter,
   },
-
   {
     "nvim-tree/nvim-tree.lua",
     even = "VimEnter",
@@ -73,13 +71,7 @@ local plugins = {
     config = function()
       require("better_escape").setup()
     end,
-  },
-  {
-    "gen740/SmoothCursor.nvim",
-    lazy = false,
-    config = function()
-      require "custom.configs.smoothcursor"
-    end
+    lazy = false
   },
   {
     "cappyzawa/trim.nvim",
@@ -100,13 +92,12 @@ local plugins = {
     lazy = false
   },
   {
-    "karb94/neoscroll.nvim",
+    "ethanholz/nvim-lastplace",
     lazy = false,
-    config = function ()
-      require "neoscroll".setup()
+    config = function()
+      require("nvim-lastplace").setup({})
     end
   },
-
 
 
   -- To make a plugin not be loaded
