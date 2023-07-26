@@ -7,6 +7,12 @@ local opts = {
   noremap = true
 }
 
+local talkativeopts = {
+  nowait = true,
+  noremap = true
+}
+
+
 M.general = {
   n = {
     ["<C-h>"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
@@ -17,8 +23,6 @@ M.general = {
     ["N"] = { "Nzz", "center result search", opts = opts },
     ["<C-d>"] = { "<C-d>zz" },
     ["<C-u>"] = { "<C-u>zz" },
-    ["<leader>sh"] = { ":split<CR>", "split pane horizontal", opts = opts },
-    ["<leader>sv"] = { ":vsplit<CR>", "split pane vertical", opts = opts },
   },
   v = {
     ["<"] = { "<gv", "tab line right", opts = opts },
@@ -29,5 +33,13 @@ M.general = {
 }
 
 -- more keybinds!
+
+M.abc = {
+  n = {
+    [",p"] = { "\"0p" }, -- paste the last content copied and not cut
+    [",P"] = { "\"0P" }, -- paste the last content copied and not cut
+    ["<leader>w"] = { ":up<CR>", opts = talkativeopts } -- save file if there was any change
+  }
+}
 
 return M
