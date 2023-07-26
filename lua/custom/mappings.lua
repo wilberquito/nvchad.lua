@@ -38,7 +38,7 @@ M.abc = {
   n = {
     [",p"] = { "\"0p" }, -- paste the last content copied and not cut
     [",P"] = { "\"0P" }, -- paste the last content copied and not cut
-    ["<leader>w"] = { ":up<CR>", opts = talkativeopts } -- save file if there was any change
+    ["<leader>s"] = { ":up<CR>", opts = talkativeopts } -- save file if there was any change
   }
 }
 
