@@ -23,8 +23,8 @@ M.general = {
   v = {
     ["<"] = { "<gv", "tab line right", opts = opts },
     [">"] = { ">gv", "tab line left", opts = opts },
-    ["<S-j>"] = { ":m '>+1<CR>gv=gv", "move line up", opts = opts },
-    ["<S-k>"] = { ":m '>-2<CR>gv=gv", "move line up", opts = opts },
+    -- ["<S-j>"] = { ":m '>+1<CR>gv=gv", "move line up", opts = opts },
+    -- ["<S-k>"] = { ":m '>-2<CR>gv=gv", "move line up", opts = opts },
   }
 }
 
