@@ -73,6 +73,11 @@ local plugins = {
       require("nvim-lastplace").setup({})
     end
   },
+  {
+    "RRethy/vim-illuminate",
+    lazy = false,
+  },
+
 
 
   -- To make a plugin not be loaded
