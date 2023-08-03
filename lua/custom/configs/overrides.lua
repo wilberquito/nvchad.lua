@@ -44,7 +44,10 @@ M.mason = {
     "haskell-language-server",
 
     -- python stuff
-    "python-lsp-server"
+    "python-lsp-server",
+
+    -- Latex lsp
+    "texlab"
   },
 }
 
