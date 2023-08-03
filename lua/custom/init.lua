@@ -11,6 +11,8 @@ local opt = vim.opt
 
 -- highlight current line
 opt.cursorline = true
+-- vertical line
+opt.cursorcolumn = true
 
 -- Numbers
 opt.number = true
@@ -24,6 +26,12 @@ opt.wrap = false
 
  -- scroll offwidth so it's not the very bottom
 opt.scrolloff = 6
+
+-- vertical command window higher
+opt.cmdwinheight=10
+
+-- command line higher
+opt.cmdheight=2
 
 -- highlight yanked text for 200ms using the "Visual" highlight group
 vim.cmd[[
