@@ -77,7 +77,10 @@ local plugins = {
     "RRethy/vim-illuminate",
     lazy = false,
   },
-
+  {
+    "lervag/vimtex",
+    lazy = false,
+  }
 
 
   -- To make a plugin not be loaded
