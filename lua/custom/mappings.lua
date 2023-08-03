@@ -35,7 +35,9 @@ M.disabled = {
     -- new
     ["<leader>h"] = "",
 
-    ["<leader>v"] = ""
+    ["<leader>v"] = "",
+
+    ["<C-c>"] = "",
   }
 }
 
