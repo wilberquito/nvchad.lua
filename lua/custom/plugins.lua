@@ -56,13 +56,6 @@ local plugins = {
     end
   },
   {
-    "folke/trouble.nvim",
-    requires = "nvim-tree/nvim-web-devicons",
-    config = function()
-      require "custom.configs.trouble"
-    end
-  },
-  {
     "christoomey/vim-tmux-navigator",
     lazy = false
   },

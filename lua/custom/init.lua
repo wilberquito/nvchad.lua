@@ -11,8 +11,6 @@ local opt = vim.opt
 
 -- highlight current line
 opt.cursorline = true
--- vertical line
-opt.cursorcolumn = true
 
 -- Numbers
 opt.number = true
@@ -28,7 +26,7 @@ opt.wrap = false
 opt.scrolloff = 6
 
 -- vertical command window higher
-opt.cmdwinheight=10
+opt.cmdwinheight=6
 
 -- command line higher
 opt.cmdheight=2
