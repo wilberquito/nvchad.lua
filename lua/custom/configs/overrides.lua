@@ -35,10 +35,11 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "prettier",
+    "deno",
 
-    -- -- c/cpp stuff
-    -- "clangd",
-    -- "clang-format",
+    -- c/cpp stuff
+    "clangd",
+    "clang-format",
 
     -- haskell stuff
     "haskell-language-server",
@@ -47,7 +48,8 @@ M.mason = {
     "python-lsp-server",
 
     -- Latex lsp
-    "texlab"
+    "texlab",
+
   },
 }
 
