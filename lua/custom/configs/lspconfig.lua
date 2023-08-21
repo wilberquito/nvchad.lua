@@ -12,6 +12,7 @@ local servers = {
   "hls",
   "pylsp",
   "svelte",
+  "texlab"
 }
 
 for _, lsp in ipairs(servers) do
