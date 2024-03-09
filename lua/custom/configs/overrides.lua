@@ -72,7 +72,6 @@ M.nvimtree = {
     adaptive_size = false,
     side = "left",
     width = 40,
-    hide_root_folder = false
   },
 
 }
