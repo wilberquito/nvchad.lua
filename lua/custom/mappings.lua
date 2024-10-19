@@ -58,6 +58,10 @@ M.general = {
     [">"] = { ">gv", "tab line left", opts = opts },
     ["<S-j>"] = { ":move '>+1<CR>gv=gv", "Move selected lines down", opts = opts },
     ["<S-k>"] = { ":move '<-2<CR>gv=gv", "Move selected lines up", opts = opts },
+  },
+  t = {
+    ["<Esc>"] = {"<C-\\><C-n>", opts=opts},
+    ["jk"] = {"<C-\\><C-n>", opts=opts}
   }
 }
 
